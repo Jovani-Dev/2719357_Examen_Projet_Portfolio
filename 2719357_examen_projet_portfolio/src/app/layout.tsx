@@ -18,13 +18,14 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Portfolio de Jovani',
-  description: 'Développeur web et mobile — React, Next.js, WPF, etc.',
+  description: 'Développeur Desktop, web et mobile — React, Next.js, WPF, C# etc.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      {/* <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}> */}
+      <body className="font-garamond antialiased">
         <ReduxProvider>
           <Header />
           <main className="min-h-screen px-4 py-6">{children}</main>
